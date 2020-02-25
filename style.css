@@ -26,12 +26,18 @@ header {
     margin-left: 0.6rem;
     /* border-bottom: 1px solid red; */
 }
-
-section div.homeContainer h2{
-    color: rgb(208, 173, 110);
+.homeContainer{
+    color:rgb(208, 173, 110);
 }
-section div.homeContainer h2 span{
-    color:red;
+
+section div.homeContainer h2 span {
+    color: red;
+}
+
+section div.homeContainer h1 span {
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: end;
 }
 
 .headerLogo span {
@@ -86,7 +92,7 @@ section.onSaleContainer div.homeContainer {
     justify-content: space-evenly;
 }
 
-section.onSaleContainer div.imgContainer img{
+section.onSaleContainer div.imgContainer img {
     border: 1px solid black;
     height: 25rem;
     width: 35rem;
@@ -117,6 +123,6 @@ section.contentContainer div.featuredContent {
     margin-top: 4rem;
 }
 
-section.contentContainer div.featuredContent figure h4 span{
+section.contentContainer div.featuredContent figure h4 span {
     color: rgb(208, 173, 110);
 }
