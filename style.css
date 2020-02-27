@@ -5,6 +5,7 @@
 }
 
 header {
+    position: fixed;
     display: flex;
     width: 100%;
     height: 5rem;
@@ -13,10 +14,17 @@ header {
     border-bottom: 1.5px solid #FFF;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
 .headerLogo {
     width: 15%;
     height: 80%;
-    border: 1px solid black;
 }
 
 .headerLogo h1 {
@@ -26,8 +34,16 @@ header {
     margin-left: 0.6rem;
     /* border-bottom: 1px solid red; */
 }
-.homeContainer{
-    color:rgb(208, 173, 110);
+
+.homeContainer {
+    color: rgb(208, 173, 110);
+}
+
+section div.homeContainer button {
+    width: 8.5rem;
+    height: 2.5rem;
+    color: aliceblue;
+    background-color: brown;
 }
 
 section div.homeContainer h2 span {
@@ -78,7 +94,7 @@ landing page Sale
 section.onSaleContainer {
     display: flex;
     justify-content: space-around;
-    padding-top: 8rem;
+    padding-top: 14rem;
     min-height: 700px;
 }
 
@@ -109,20 +125,43 @@ section.contentContainer h1 {
     font-size: 45px;
     color: rgb(208, 173, 110);
     text-align: center;
-    /* border-bottom: 1px solid red; */
     text-decoration: underline;
     font-weight: lighter;
 }
 
-section.contentContainer div.featuredContent {
+section.contentContainer div.grid-Content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 5rem;
     text-align: center;
-    padding: 20px;
-    margin-top: 4rem;
+    padding: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
 }
 
-section.contentContainer div.featuredContent figure h4 span {
+section.contentContainer div.grid-Content figure div {
+    text-decoration: line-through;
+    color: red;
+}
+
+section.contentContainer div.grid-Content figure span {
     color: rgb(208, 173, 110);
+}
+
+/*
+
+ Go top Button 
+
+*/
+.goTopBtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #27ae60;
+    bottom:40px;
+    right:50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
 }

@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Lux fragrance</title>
 </head>
 
 <body>
     <div class="container">
-        <header>
+        <header id="myHeader">
             <div class="headerLogo">
                 <h1>lux
                     <span>fragrance</span>
@@ -39,34 +40,23 @@
             </div>
 
             <div class="imgContainer">
-                <img src="small/creed.jpg">
+                <img src="img/sale-banner/creed.jpg">
             </div>
         </section>
 
         <section class="contentContainer">
             <h1>Featured</h1>
-            <div id="content" class="featuredContent">
-                <figure>
-                    <a href="#">
-                        <img src="img/chpard-wish.jpg">
-                    </a>
-                    <figcaption>
-                        <h4>Chopard Wish
-                            <span>102 lei</span>
-                        </h4>
-                        <p>produc details</p>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="discountsContainer">
-
-            </div>
-            <div class="accesoriesContainer">
-
-            </div>
+            <div id="featuredContent" class="grid-Content"></div>
+            <h1>Discounts</h1>
+            <div id="discountsContent" class="grid-Content"></div>
+            <h1>Accessories</h1>
+            <div id="accessoriesContent" class="grid-Content"></div>
         </section>
 
     </div>
+    <!-- <a href="#" class="goTopBtn"> 
+        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+    </a> -->
 
     <script type="text/javascript" src="main.js"></script>
 </body>
