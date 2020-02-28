@@ -1,8 +1,8 @@
 // sticky header 
 window.onscroll = function () { whenScroll() };
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+const header = document.getElementById("myHeader");
+const sticky = header.offsetTop;
 
 function whenScroll() {
     if (window.pageYOffset > sticky) {
@@ -66,17 +66,17 @@ const featuredProducts = [
 ]
 
 for (let i in featuredProducts) {
-    var newFigure = document.createElement('figure');
-    var newA = document.createElement('a');
-    var newImg = document.createElement('img');
-    var newFigcaption = document.createElement('figcaption');
-    var newH4 = document.createElement('h4');
-    var newP = document.createElement('p');
-    var newSpan = document.createElement('span');
-    var newDiv = document.createElement('div');
+    const newFigure = document.createElement('figure');
+    const newA = document.createElement('a');
+    const newImg = document.createElement('img');
+    const newFigcaption = document.createElement('figcaption');
+    const newH4 = document.createElement('h4');
+    const newP = document.createElement('p');
+    const newSpan = document.createElement('span');
+    const newDiv = document.createElement('div');
 
-    var featuredContent = document.getElementById('featuredContent');
-    var discountsContent = document.getElementById('discountsContent');
+    const featuredContent = document.getElementById('featuredContent');
+    const discountsContent = document.getElementById('discountsContent');
     console.log(featuredContent);
 
     featuredContent.appendChild(newFigure);
@@ -127,16 +127,16 @@ const discountedProducts = [{
 }]
 
 for (let i in discountedProducts) {
-    var newFigure = document.createElement('figure');
-    var newA = document.createElement('a');
-    var newImg = document.createElement('img');
-    var newFigcaption = document.createElement('figcaption');
-    var newH4 = document.createElement('h4');
-    var newP = document.createElement('p');
-    var newSpan = document.createElement('span');
-    var newDiv = document.createElement('div');
+    const newFigure = document.createElement('figure');
+    const newA = document.createElement('a');
+    const newImg = document.createElement('img');
+    const newFigcaption = document.createElement('figcaption');
+    const newH4 = document.createElement('h4');
+    const newP = document.createElement('p');
+    const newSpan = document.createElement('span');
+    const newDiv = document.createElement('div');
 
-    var discountedContent = document.getElementById('discountsContent');
+    const discountedContent = document.getElementById('discountsContent');
 
     discountedContent.appendChild(newFigure);
     newFigure.appendChild(newA);
@@ -210,16 +210,16 @@ const accessories = [
 ]
 
 for(let i in accessories){
-    var newFigure = document.createElement('figure');
-    var newA = document.createElement('a');
-    var newImg = document.createElement('img');
-    var newFigcaption = document.createElement('figcaption');
-    var newH4 = document.createElement('h4');
-    var newP = document.createElement('p');
-    var newSpan = document.createElement('span');
-    var newDiv = document.createElement('div');
+    const newFigure = document.createElement('figure');
+    const newA = document.createElement('a');
+    const newImg = document.createElement('img');
+    const newFigcaption = document.createElement('figcaption');
+    const newH4 = document.createElement('h4');
+    const newP = document.createElement('p');
+    const newSpan = document.createElement('span');
+    const newDiv = document.createElement('div');
 
-    var accessoriesContent = document.getElementById('accessoriesContent');
+    const accessoriesContent = document.getElementById('accessoriesContent');
 
     accessoriesContent.appendChild(newFigure);
     newFigure.appendChild(newA);
@@ -236,3 +236,5 @@ for(let i in accessories){
     newSpan.innerHTML = accessories[i].price + ' Lei';
     newP.innerHTML = accessories[i].details;
 }
+
+
